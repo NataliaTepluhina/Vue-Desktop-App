@@ -1,0 +1,29 @@
+{
+  "name": "fit-noted",
+  "version": "1.0.0",
+  "description": "App to note your workouts",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "webpack --config build/webpack.config.js --env.production",
+    "build:dev": "webpack --config build/webpack.config.js",
+    "watch": "webpack --config build/webpack.config.js --watch",
+    "start": "node ./dist/main.min.js",
+    "start:dev": "node ./dist/main.js"
+  },
+  "author": "NataliaTepluhina <tarya.se@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "vuido": "^0.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "vue-loader": "^15.4.0",
+    "vue-template-compiler": "^2.5.17",
+    "vuido-template-compiler": "^0.2.0",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  }
+}

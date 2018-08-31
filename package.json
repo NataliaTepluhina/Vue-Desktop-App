@@ -21,6 +21,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
+    "launchui-packager": "^0.1.1",
     "vue-loader": "^15.4.0",
     "vue-template-compiler": "^2.5.17",
     "vuido-template-compiler": "^0.2.0",

@@ -58,8 +58,8 @@ export default {
         )
         .then(response => {
           this.city = response.data.name;
-          (this.country = response.data.sys.country),
-            (this.weatherDescription = response.data.weather[0].description);
+          this.country = response.data.sys.country;
+          this.weatherDescription = response.data.weather[0].description;
           this.temp = response.data.main.temp;
           this.tempMin = response.data.main.temp_min;
           this.tempMax = response.data.main.temp_max;

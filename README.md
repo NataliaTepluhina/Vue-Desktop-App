@@ -1,3 +1,3 @@
 # Vue Desktop App
 
-Simple Vue desktop application built with Vuido
+Simple Vue desktop application built with Electron

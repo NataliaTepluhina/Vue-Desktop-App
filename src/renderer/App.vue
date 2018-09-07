@@ -1,8 +1,21 @@
 <template>
-  <div id="app">
-    {{city}}
-    <button @click="showWeather">Get London Weather</button>
-  </div>
+  <main id="app">
+    <section class="weather-input">
+      <input type="text" v-model="query">
+      <button :disabled="!query.length" @click="showWeather">Get weather</button>
+    </section>
+    <section v-if="error" class="weather-error">
+      There is no such city in the database
+    </section>
+    <section v-if="city.length" class="weather-result">
+      <div class="weather-result__main">
+        {{city}}
+      </div>
+      <div class="weather-result__details">
+
+      </div>
+    </section>
+  </main>
 </template>
 
 <script>
@@ -13,7 +26,7 @@ export default {
   name: 'weather-app',
   data() {
     return {
-      query: 'London',
+      query: '',
       error: false,
       city: '',
       country: '',
@@ -22,6 +35,7 @@ export default {
       tempMin: null,
       tempMax: null,
       humidity: null,
+      icon: '',
     };
   },
   methods: {
@@ -36,6 +50,9 @@ export default {
           this.tempMin = response.data.main.temp_min;
           this.tempMax = response.data.main.temp_max;
           this.humidity = response.data.main.humidity;
+          this.icon = `http://openweathermap.org/img/w/${
+            response.data.weather[0].icon
+          }.png`;
           this.error = false;
         })
         .catch(() => {
@@ -47,6 +64,33 @@ export default {
 };
 </script>
 
-<style>
-/* CSS */
+<style lang="scss">
+#app {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.weather-input,
+.weather-result__main {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  width: 75%;
+  outline: none;
+  height: 20px;
+  font-size: 0.8rem;
+}
+
+button {
+  display: block;
+  width: 25%;
+  height: 25px;
+  outline: none;
+  border-radius: 5px;
+  white-space: nowrap;
+  margin: 0 15px;
+  font-size: 0.8rem;
+}
 </style>

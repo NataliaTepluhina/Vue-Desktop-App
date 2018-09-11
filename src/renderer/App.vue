@@ -47,11 +47,7 @@ export default {
   methods: {
     showWeather() {
       this.$http
-        .get(
-          `http://api.openweathermap.org/data/2.5/weather?q=${
-            this.query
-          }&units=metric&&appid=${API_KEY}`,
-        )
+        .get(`/weather?q=${this.query}&units=metric&&appid=${API_KEY}`)
         .then(response => {
           this.city = response.data.name;
           this.country = response.data.sys.country;

@@ -1,31 +1,22 @@
 {
-  "name": "weather-app",
-  "version": "1.0.0",
-  "description": "Weather in your city",
-  "main": "dist/main.js",
-  "scripts": {
-    "build": "webpack --config build/webpack.config.js --env.production",
-    "build:dev": "webpack --config build/webpack.config.js",
-    "watch": "webpack --config build/webpack.config.js --watch",
-    "start": "node ./dist/main.min.js",
-    "start:dev": "node ./dist/main.js"
-  },
-  "author": "NataliaTepluhina <tarya.se@gmail.com>",
-  "license": "MIT",
+  "name": "my-awesome-app",
+  "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
   "dependencies": {
-    "axios": "^0.18.0",
-    "vuido": "^0.2.0"
+    "vue": "^2.5.21"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "launchui-packager": "^0.1.1",
-    "vue-loader": "^15.4.0",
-    "vue-template-compiler": "^2.5.17",
-    "vuido-template-compiler": "^0.2.0",
-    "webpack": "^4.16.5",
-    "webpack-cli": "^3.1.0"
-  }
+    "@vue/cli-plugin-babel": "^3.2.2",
+    "@vue/cli-service": "^3.2.2",
+    "vue-template-compiler": "^2.5.21",
+    "nwjs-builder-phoenix": "^1.15.0"
+  },
+  "build": {
+    "nwVersion": "0.35.3"
+  },
+  "main": "index.html"
 }

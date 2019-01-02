@@ -1,9 +1,8 @@
-import Vue from 'vuido'
+import Vue from 'vue'
+import App from './App.vue'
 
-import MainWindow from './MainWindow'
+Vue.config.productionTip = false
 
-const window = new Vue( {
-  render: h => h( MainWindow )
-} );
-
-window.$start();
+new Vue({
+  render: h => h(App),
+}).$mount('#app')

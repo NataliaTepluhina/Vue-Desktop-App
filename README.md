@@ -1,7 +1,16 @@
-# Vue Desktop App
+# app
 
-This project is created to compare two different approaches for building desktop applications with Vue. The application shows a weather in the city of user's choice using [OpenWeatherMap API](https://openweathermap.org/api).
+## Project setup
+```
+yarn install
+```
 
-## Vuido
+### Compiles and hot-reloads for development
+```
+yarn run serve
+```
 
-Application built with Vuido is located in `vuido` branch. Use `build` -> `start` npm tasks to run it.
+### Compiles and minifies for production
+```
+yarn run build
+```

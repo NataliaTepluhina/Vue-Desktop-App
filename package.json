@@ -1,6 +1,8 @@
 {
   "name": "my-awesome-app",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "description": "App Description",
+  "product_string": "123",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -18,5 +20,5 @@
   "build": {
     "nwVersion": "0.35.3"
   },
-  "main": "index.html"
+  "main": "http://localhost:8080"
 }

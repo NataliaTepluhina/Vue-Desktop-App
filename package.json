@@ -1,12 +1,13 @@
 {
-  "name": "my-awesome-app",
+  "name": "weather-app",
   "version": "0.1.1",
   "description": "App Description",
   "product_string": "123",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "nw-serve": "nw ."
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -17,6 +18,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.2.2",
     "@vue/cli-service": "^3.2.2",
+    "nw": "^0.35.4-sdk",
     "nwjs-builder-phoenix": "^1.15.0",
     "vue-template-compiler": "^2.5.21"
   },

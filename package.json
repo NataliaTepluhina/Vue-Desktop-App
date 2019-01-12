@@ -9,13 +9,16 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
     "vue": "^2.5.21"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.2.2",
     "@vue/cli-service": "^3.2.2",
-    "vue-template-compiler": "^2.5.21",
-    "nwjs-builder-phoenix": "^1.15.0"
+    "nwjs-builder-phoenix": "^1.15.0",
+    "vue-template-compiler": "^2.5.21"
   },
   "build": {
     "nwVersion": "0.35.3"

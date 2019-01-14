@@ -8,8 +8,8 @@ Application built with Vuido is located in `vuido` branch. Use `build` -> `start
 
 ## Electron
 
-Application built with Electron is located in `electron` branch. Use `build` -> `start` npm tasks to run it.
+Application built with Electron is located in `electron` branch. Use `dev` npm task to run it.
 
-##NW.js
+## NW.js
 
 Application built with NW.js is located in `nwjs` branch. Use `serve` and then `nw-serve` npm tasks to run it.
